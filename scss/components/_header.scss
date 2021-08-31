@@ -1,0 +1,30 @@
+header{
+    background-color: #ffffff;
+	@extend %sombreado;
+	display: grid;
+	grid-template-rows: 100px;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-around;
+	position: sticky;
+	top: 0;
+	z-index:10000px;
+    .logo{
+        padding: 10px;
+        width: 100px;
+        transition: all 2s;
+    }
+    .logo:hover{
+        transform: skew(10deg);
+    }
+    nav{
+        font-family: var(--letratitulo);
+        ul{
+            li{
+                a{
+                    text-decoration: none;
+                }
+
+            }
+        }
+    }
+}

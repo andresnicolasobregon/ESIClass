@@ -1,0 +1,10 @@
+$social: (
+    derecho: #9678df,
+    diversidad: #dd4250,
+    salud: #33addc,
+    prevencion: #eb5637,
+);
+
+.usuarioregistrado{
+    background-color: map-get($social, derecho);
+}

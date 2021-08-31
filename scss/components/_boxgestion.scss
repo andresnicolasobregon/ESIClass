@@ -1,0 +1,15 @@
+.box-gestion{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 10px;
+    height: 400px;
+    position: relative;
+    top: -200px;
+    .imagengestion{
+        width: 80%;
+    }
+}

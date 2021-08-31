@@ -1,0 +1,23 @@
+/*fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+/*Variables*/
+:root{
+	--letratitulo: 'Roboto Condensed', sans-serif;
+	--colorbotones: #2cbd9b;
+}
+*{
+	margin: 0px;
+	text-align: center;
+}
+@import "components/header"; 
+@import "components/main"; 
+@import "components/botones";
+@import "components/footer";
+@import "components/titulos";
+@import "components/junta";
+@import "components/boxgestion";
+@import "components/boxcategoria";
+@import "base/maps";
+@import "base/extends";
+@import "base/mixins";
+

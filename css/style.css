@@ -1,0 +1,260 @@
+/*fuente*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+/*Variables*/
+:root {
+  --letratitulo: "Roboto Condensed", sans-serif;
+  --colorbotones: #2cbd9b;
+}
+
+* {
+  margin: 0px;
+  text-align: center;
+}
+
+header {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 10000px;
+}
+header .logo {
+  padding: 10px;
+  width: 100px;
+  transition: all 2s;
+}
+header .logo:hover {
+  transform: skew(10deg);
+}
+header nav {
+  font-family: var(--letratitulo);
+}
+header nav ul li a {
+  text-decoration: none;
+}
+
+main {
+  margin: 20px;
+}
+main section {
+  padding-top: 30px;
+}
+main section .categorias {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main section .categorias .categoria {
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 260px;
+  height: 300px;
+  padding: 20px;
+  margin: 10px;
+  transition: all 2s;
+}
+main section .categorias .categoria:hover {
+  transform: scale(1.1);
+}
+main section .recursos {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main section .recursos .recurso {
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 350px;
+  height: 250px;
+  padding-top: 10px;
+  margin: 10px;
+  transition: all 2s;
+}
+main section .recursos .recurso img {
+  width: 100px;
+  height: 100px;
+}
+main section .recursos .recurso:hover {
+  transform: scale(1.1);
+}
+main section .entrevistas {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main section .entrevistas .entrevista {
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 350px;
+  height: 300px;
+  padding-top: 10px;
+  margin: 10px;
+  transition: all 2s;
+}
+
+.botongestion, .botoncategoria, .botonrecurso, .botonvermasrecursos, .botonentrevista, .botonvertodaslasentrevistas {
+  background-color: var(--colorbotones);
+  color: #ffffff;
+  border: 0px;
+  transition: all 2s;
+}
+.botongestion a, .botoncategoria a, .botonrecurso a, .botonvermasrecursos a, .botonentrevista a, .botonvertodaslasentrevistas a {
+  text-decoration: none;
+}
+
+.botongestion:hover, .botoncategoria:hover, .botonrecurso:hover, .botonvermasrecursos:hover, .botonentrevista:hover, .botonvertodaslasentrevistas:hover {
+  transform: scale(1.1);
+}
+
+.botonwhatsapp {
+  background-image: url(../imagenes/logowhatsapp.png);
+  border-radius: 50px;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: 0px;
+  transition: all 2s;
+}
+
+.botonwhatsapp:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  padding: 20px;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-rows: 250px;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #de5b65;
+}
+footer a {
+  text-decoration: none;
+}
+footer .logoredes {
+  width: 30%;
+  transition: all 2s;
+}
+footer .logo {
+  width: 30%;
+  transition: all 2s;
+}
+footer .footer-link {
+  flex-direction: column;
+  align-items: initial;
+  text-align: left;
+}
+footer .footer-link a {
+  text-decoration: none;
+}
+footer .footer-logos {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-rows: 250px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer .logoredes:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  font-size: 40px;
+  font-family: var(--letratitulo);
+  text-align: center;
+  transition: all 2s;
+}
+
+h2:hover {
+  transform: scale(1.1);
+}
+
+h3 {
+  font-size: 25px;
+  font-family: var(--letratitulo);
+  text-align: left;
+}
+
+p {
+  font-size: 20px;
+  font-family: var(--letratitulo);
+}
+
+main .grid-container {
+  display: grid;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+main .grid-container .titulo-junta {
+  text-align: center;
+}
+main .grid-container .junta {
+  width: 30%;
+  border-radius: 80px;
+}
+main .grid-container .grid-item {
+  transition: all 2s;
+}
+main .grid-container .grid-item:hover {
+  transform: scale(1.1);
+}
+
+.box-gestion {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 10px;
+  height: 400px;
+  position: relative;
+  top: -200px;
+}
+.box-gestion .imagengestion {
+  width: 80%;
+}
+
+.box-categoria {
+  position: relative;
+  top: -200px;
+}
+
+.usuarioregistrado {
+  background-color: #9678df;
+}
+
+/* exteds */
+header, main section .categorias .categoria, main section .recursos .recurso, main section .entrevistas .entrevista, .botongestion:hover, .botoncategoria:hover, .botonrecurso:hover, .botonvermasrecursos:hover, .botonentrevista:hover, .botonvertodaslasentrevistas:hover, .botonwhatsapp:hover, footer {
+  box-shadow: 3px 1px 20px 1px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 3px 1px 20px 1px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 3px 1px 20px 1px rgba(0, 0, 0, 0.42);
+}
+
+.botongestion, .botoncategoria, .botonrecurso, .botonvermasrecursos, .botonentrevista, .botonvertodaslasentrevistas {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

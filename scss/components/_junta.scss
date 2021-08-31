@@ -1,0 +1,21 @@
+main{
+    .grid-container{
+        display: grid;
+        grid-template-rows: 250px 250px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .titulo-junta{
+            text-align: center;
+        }
+        .junta{
+            width: 30%;
+            border-radius: 80px;
+        }
+        .grid-item{
+            transition: all 2s;
+        }
+        .grid-item:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+}

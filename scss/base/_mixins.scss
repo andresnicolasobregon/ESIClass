@@ -1,0 +1,9 @@
+@mixin variosparametros ($ancho, $alto, $radio) {
+    width: $ancho;
+    height: $alto;
+    border-radius: $radio;
+}
+
+.botongestion, .botoncategoria, .botonrecurso, .botonvermasrecursos, .botonentrevista, .botonvertodaslasentrevistas{
+    @include variosparametros(200px, 50px , 10px)
+}
