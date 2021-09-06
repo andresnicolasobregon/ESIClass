@@ -12,4 +12,10 @@
     .imagengestion{
         width: 80%;
     }
+    .foto-box-gestion{
+        transition: all 2s;
+    }
+    .foto-box-gestion:hover {
+        transform: scale(1.1);
+    }
 }

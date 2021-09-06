@@ -171,10 +171,28 @@ footer .footer-link a {
 footer .footer-logos {
   display: grid;
   flex-wrap: wrap;
-  grid-template-rows: 250px;
+  grid-template-rows: 150px 100px;
+  grid-template-columns: 1fr;
+}
+footer .footer-logos .footer-logos1 {
+  display: grid;
+  flex-wrap: wrap;
+  text-align: center;
+  grid-template-rows: 100px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 footer .logoredes:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  font-size: 40px;
+  font-family: var(--letratitulo);
+  text-align: center;
+  transition: all 2s;
+}
+
+h1:hover {
   transform: scale(1.1);
 }
 
@@ -233,6 +251,12 @@ main .grid-container .grid-item:hover {
 }
 .box-gestion .imagengestion {
   width: 80%;
+}
+.box-gestion .foto-box-gestion {
+  transition: all 2s;
+}
+.box-gestion .foto-box-gestion:hover {
+  transform: scale(1.1);
 }
 
 .box-categoria {
