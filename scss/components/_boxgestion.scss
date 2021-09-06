@@ -1,12 +1,7 @@
-.box-gestion{
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
-    margin: 10px;
-    height: 400px;
+.box-gestion1, .box-gestion2 {
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-columns: 1fr 1fr;
     position: relative;
     top: -200px;
     .imagengestion{
@@ -18,4 +13,18 @@
     .foto-box-gestion:hover {
         transform: scale(1.1);
     }
+}
+/*Configuraciones para distintas pantallas*/
+@media only screen and (max-width: 768px){
+	.box-gestion1{
+		display: grid;
+		grid-template-rows: 400px 400px;
+		grid-template-columns: 1fr ;
+	}
+    .box-gestion2{
+		display: grid;
+		grid-template-rows: 400px 400px;
+		grid-template-columns: 1fr ;
+	}
+
 }
