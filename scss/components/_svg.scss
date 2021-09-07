@@ -1,0 +1,12 @@
+.volado{
+    position: relative;
+    top: 100px;
+}
+/*Configuraciones para distintas pantallas*/
+@media only screen and (max-width: 768px){
+	.volado{
+        position: relative;
+        top: 110px;
+    }
+
+}

@@ -36,6 +36,18 @@ header nav ul li a {
   text-decoration: none;
 }
 
+.volado {
+  position: relative;
+  top: 100px;
+}
+
+/*Configuraciones para distintas pantallas*/
+@media only screen and (max-width: 768px) {
+  .volado {
+    position: relative;
+    top: 110px;
+  }
+}
 main {
   margin: 20px;
 }
@@ -241,8 +253,6 @@ main .grid-container .grid-item:hover {
   display: grid;
   grid-template-rows: 400px;
   grid-template-columns: 1fr 1fr;
-  position: relative;
-  top: -200px;
 }
 .box-gestion1 .imagengestion, .box-gestion2 .imagengestion {
   width: 80%;
